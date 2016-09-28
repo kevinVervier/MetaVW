@@ -164,6 +164,6 @@ Please remember that some parameters are mandatory:
 * a mean coverage value to considere while generating training batches (COVERAGE)
 * a k-mer size (K)
 
-You may also want to directly use our models to make predictions for your own sequencing data (require training first).
+You may also want to use models trained in the same way than in the paper, to make predictions for your own sequencing data.
 
-To do this, please change the scripts in 3-make-predictions/src/ in order to point to your FASTA file.
+To do this, please train the models and then, change the scripts in 3-make-predictions/src/ in order to point to your FASTA file.
