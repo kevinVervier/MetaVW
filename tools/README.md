@@ -12,6 +12,7 @@ The `INSTALL.sh' bash script carries out the installation of these tools :
 * installation of drawfrag and fasta2vw.
 
 To run is, you should type at the prompt:
-$ sh INSTALL.sh
+
+``` sh INSTALL.sh ```
 
 The `test' directory contains a simple script illustrating how to use these tools on a small fasta file.
