@@ -123,7 +123,7 @@ The following instructions have to be executed in the given order. At each step,
   * COVERAGE: mean coverage for all genomes in the database (default: 1)
 
 5. ``` cd ../../2-build-models/src```
-6. ```sh 01.main.sh```
+6. ```bash 01.main.sh```
   Uses VW for an iterative learning (WARNING: can take time!) based on the following parameters:
  * DB: sequences database (small or large)
  * NBATCHES: number of train batches (default: 10)
