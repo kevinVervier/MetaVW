@@ -1,0 +1,24 @@
+This directory contains source codes of (mainly C) programs involved in the Vowpam Wabbit (VW) based read classification pipeline :
+* `drawfrag' is used to draw fragments from reference genomes
+* `fasta2vw' is used to convert a fasta file into a plain text file compliant with VW
+* `enumerateKmers' is used to enumerate all kmers of a given length in a file
+  compliant with VW. It is used to extract the model parameters.
+* `parseHash' is used to convert an 'inverted' VW model into a binary file
+  containing model parameters.
+* `spectrumpredict' is ued to make predictions from such a binary file and a
+  standard fasta file.
+
+These tools rely on two existing libraries :
+* the GDL library that implements (among  other thing) many file manipulation utilities and data structures (e.g., list and hash tables)
+* the KSEQ library that is used to manipulate fasta and fastq files
+These two libraries are included in the "ext" directory.
+
+The `INSTALL.sh' bash script (of the parent directory) carries out the installation of these tools : 
+* installation of the GDL library (installed here in ext/gdl-1.2/GDL)
+* installation of these tools
+
+To run is, you should type at the prompt:
+$ sh INSTALL.sh
+
+The `test' directory contains a simple script illustrating how to use these tools on a small fasta file.
+
